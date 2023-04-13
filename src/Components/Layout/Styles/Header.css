@@ -1,12 +1,15 @@
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
     background-color: var(--light-brown);
     height: 50px;
+    position: sticky;
+    top: 0;
 }
 
 .header__logo {
+    position: fixed;
+    left: 20px;
     height: 120px;
 }
 
@@ -20,9 +23,94 @@
     font-family: var(--lilita-one);
     font-size: 20px;
     color: var(--verylight-brown);
+    position: fixed;
+    right: 70px;
 }
+
 
 .navbar > a:hover {
     color: var(--brown);
     transition: color 300ms ease-in-out;
+}
+
+@media screen and (max-width: 620px) {
+    .navbar{
+        display: none;
+    }
+    
+}
+
+/*mob version */
+
+.mob-conteiner {
+    display: grid;
+    place-content: center;
+
+}
+
+.active {
+    display: grid;
+    animation: openAnim 400ms ease-in-out;
+}
+
+.inactive {
+    display: none;
+}
+
+.mob-menu{
+    position: fixed;
+    top: 0;
+}
+
+.mob-open, 
+.mob-close {
+    width: 40px;
+    height: 40px;
+}
+
+.mob-open {
+    position: fixed;
+    right: 20px;
+    top: 5px;
+}
+
+.mob-list {
+    height: 100%;
+    width: 35%;
+    position: fixed;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
+
+    background-color: var(--brown);
+}
+
+.mob-list__item {
+    color: var(--light-brown);
+}
+
+.mob-close {
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    z-index: 5;
+}
+
+@media screen and (min-width: 620px) {
+    .mob-menu {
+        display: none;
+    }
+}
+
+@keyframes openAnim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
