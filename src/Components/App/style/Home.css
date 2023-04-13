@@ -1,0 +1,13 @@
+.home {
+    display: flex;
+    height: auto;
+    max-width: 1100px;
+    padding: 30px;
+
+}
+
+.home__img {
+    height: 400px;
+    border-radius: 50%;
+    overflow: hidden;
+}

@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--light-brown);
+    height: 50px;
+}
+
+.header__logo {
+    height: 120px;
+}
+
+.logo {
+    height: 120px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    font-family: var(--lilita-one);
+    font-size: 20px;
+    color: var(--verylight-brown);
+}
+
+.navbar > a:hover {
+    color: var(--brown);
+    transition: color 300ms ease-in-out;
+}
