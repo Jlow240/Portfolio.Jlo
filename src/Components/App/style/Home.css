@@ -1,14 +1,26 @@
 .home {
-    display: flex;
-    height: auto;
-    max-width: 1100px;
-    padding: 30px;
-
+  display: flex;
+  height: calc(100vh - 50px);
+  max-width: 1100px;
+  padding: 30px;
+  margin: 0;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  
 }
 
 .home__img {
-    max-height: 400px;
-    max-width: 350px;
-    border-radius: 50%;
-    overflow: hidden;
+  max-height: 400px;
+  max-width: 350px;
+  border-radius: 50%;
+  overflow: hidden;
 }
+
+.home__name {
+  font-size: 40px;
+  text-align: right;
+  font-family: var(--jost);
+  font-weight: 700;
+}
+

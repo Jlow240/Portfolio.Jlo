@@ -1,0 +1,41 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 50px);
+  min-width: 320px;
+  padding: 50px;
+  margin-bottom: 50px;
+  font-family: var(--jost);
+}
+
+.skills__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  gap: 10px;
+}
+
+.skills__title {
+  font-size: 45px;
+  font-weight: 700;
+
+}
+
+.skills__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  min-width: 120px;
+  border: 1px solid black;
+  border-radius: 7px;
+  font-size: 34px;
+}
+
+.skills__item > img {
+  height: 50%;
+  width: 50%;
+}

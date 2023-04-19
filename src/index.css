@@ -5,9 +5,9 @@
 @tailwind utilities;
 
 :root {
-  --verylight-brown: #f3ddb6;
-  --light-brown: #d6bf93;
-  --brown: #4c292a;
+  --verylight-brown: #fff5cc;
+  --light-brown: #d6c893;
+  --brown: #988d67;
   --comfortaa: "Comfortaa", cursive;
   --dynapuff: "DynaPuff", cursive;
   --jost: "Jost", sans-serif;
@@ -18,11 +18,13 @@
 body {
   margin: 0;
   background-color: var(--verylight-brown);
+
 }
 
 html {
   box-sizing: border-box;
-  font-family: var(--comfortaa);
+  font-family: var(--comfortaa);  
+  scroll-behavior: smooth;
 }
 
 *,

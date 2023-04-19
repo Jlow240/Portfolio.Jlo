@@ -1,3 +1,9 @@
 .aboutMe {
-    padding: 30px;
+    height: calc(100vh - 50px);
+    max-width: 1100px;
+    padding-top: 50px;
+}
+
+.aboutMe > h2 {
+    font-size: 50px;
 }

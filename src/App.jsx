@@ -3,6 +3,9 @@ import Header from './Components/Layout/Header'
 import Home from './Components/App/Home'
 import AboutMe from './Components/App/AboutMe'
 import { useState } from 'react'
+import Skills from './Components/App/Skills'
+import Projects from './Components/App/Projects'
+import Contact from './Components/App/Contact'
 
 // puedo hacer el navbar con estados y cambiando las clases con backticks
 
@@ -17,12 +20,17 @@ function App() {
 
   return (
     <main className="App">
-      <Header 
-      showNav={showNav}
-      handleClickShowNavbar={handleClickShowNavbar}
-      />
-      <Home />
-      <AboutMe />
+        <Header
+          className='header'
+          showNav={showNav}
+          handleClickShowNavbar={handleClickShowNavbar}/>
+      <article className='card__conteiner'>
+        <Home className='card'/>
+        <AboutMe className='card'/>
+        <Skills  className='card'/>
+        <Projects className='card'/>
+        <Contact  className='card'/>
+      </article>
     </main>
   )
 }
