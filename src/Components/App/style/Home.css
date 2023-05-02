@@ -18,9 +18,17 @@
 }
 
 .home__name {
-  font-size: 40px;
-  text-align: right;
+  overflow-x:hidden;
+  overflow-y:hidden;
+}
+
+.name {
+  font-size: 170px;
   font-family: var(--jost);
   font-weight: 700;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space:  nowrap;
+
 }
 

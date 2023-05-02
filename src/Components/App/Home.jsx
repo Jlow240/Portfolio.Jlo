@@ -7,9 +7,12 @@ const Home = () => {
       <div className='home__img'>
         <img className='img' src="/me.jpg" alt="" />
       </div>
-      <h1 className='home__name'>
+      <div className='home__name'>
+        <h1 className='name'>
         Juan Luis Orozco
       </h1>
+      </div>
+      
     </article>
   )
 }
