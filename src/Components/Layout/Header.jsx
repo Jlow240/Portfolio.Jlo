@@ -10,11 +10,11 @@ const Header = ({ showNav, handleClickShowNavbar }) => {
         <a href="https://github.com/Jlow240" target='_blank'><img className='logo' src="/Jlow.svg" alt="" /></a>
       </div>
       <nav className="navbar">
-          <a href="#home">Home</a>
-          <a href="#aboutMe">About Me</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#aboutMe">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </nav>
 
       <div onClick={handleClickShowNavbar} className='icon'>D</div>

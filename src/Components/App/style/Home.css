@@ -1,13 +1,65 @@
 .home {
   display: flex;
   height: calc(100vh - 50px);
-  max-width: 1100px;
+  max-width: 1010px;
   padding: 30px;
   margin: 0;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  
+}
+
+.home__name > h1 {
+  font-size: 64px;
+  font-family: var(--quicksand);
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  animation-name: slide-in;
+  animation-duration: 1.4s;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.retroshadow {
+  color: #2c2c2c;
+  letter-spacing: .05em;
+  text-shadow: 
+    4px 4px 0px #d5d5d5, 
+    7px 7px 0px rgba(0, 0, 0, 0.2);
+}
+
+.home__title > h2 {
+  font-size: 40px;
+  font-family: var(--quicksand);
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  animation-name: slide-inR;
+  animation-duration: 1.4s;
+}
+
+
+@keyframes slide-inR {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .home__img {
@@ -15,18 +67,20 @@
   max-width: 350px;
   border-radius: 50%;
   overflow: hidden;
+  animation-name: slide-up;
+  animation-duration: 1.4s;
+
 }
 
-.home__name {
-  overflow-x:hidden;
-  overflow-y:hidden;
-}
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
 
-.name {
-  font-size: 90px;
-  font-family: var(--jost);
-  font-weight: 700;
-  width: 100%;
-  text-align: center;
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 

@@ -1,9 +1,19 @@
 .aboutMe {
-    height: calc(100vh - 50px);
-    max-width: 1100px;
-    padding-top: 50px;
+  height: calc(100vh - 50px);
+  max-width: 1010px;
+  padding-top: 50px;
 }
 
-.aboutMe > h2 {
-    font-size: 50px;
+.aboutMe__title {
+  text-align: left;
+  font-size: 50px;
+  padding-left: 30px;
 }
+
+.aboutMe__text {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  padding: 30px;
+}
+
